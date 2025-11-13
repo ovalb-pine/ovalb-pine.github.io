@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='#'>PhD Candidate</a>. Computer Science Department. Research in AI & Machine Learning.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Office 123</p>
+    <p>Computer Science Building</p>
+    <p>University Campus</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +27,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a PhD candidate in Computer Science with a focus on Artificial Intelligence and Machine Learning. My research interests include deep learning, natural language processing, and computer vision. I am particularly interested in developing efficient and interpretable machine learning models.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am currently working on several exciting projects involving neural network optimization and applications of AI in real-world problems. My work aims to bridge the gap between theoretical advances and practical applications.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Prior to my PhD, I completed my Master's degree in Computer Science and have worked on various research projects in collaboration with industry partners and academic institutions.
+
+Feel free to explore my publications, projects, and blog posts to learn more about my work. I'm always open to collaborations and discussions about research opportunities.
