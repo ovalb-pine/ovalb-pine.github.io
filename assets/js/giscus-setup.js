@@ -18,7 +18,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "ovalb-pine/ovalp-pine.github.io",
+    "data-repo": "ovalb-pine/ovalb-pine.github.io",
     "data-repo-id": "",
     "data-category": "Comments",
     "data-category-id": "",
