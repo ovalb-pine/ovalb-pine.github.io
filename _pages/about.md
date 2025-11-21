@@ -27,10 +27,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a PhD candidate in Computer Science with a focus on Artificial Intelligence and Machine Learning. My research interests include deep learning, natural language processing, and computer vision. I am particularly interested in developing efficient and interpretable machine learning models.
-
-I am currently working on several exciting projects involving neural network optimization and applications of AI in real-world problems. My work aims to bridge the gap between theoretical advances and practical applications.
-
-Prior to my PhD, I completed my Master's degree in Computer Science and have worked on various research projects in collaboration with industry partners and academic institutions.
-
-Feel free to explore my publications, projects, and blog posts to learn more about my work. I'm always open to collaborations and discussions about research opportunities.
+Undergraduate space physics student in Moscow, Russia. Interests: multi-messenger astronomy, EM follow-up of gravitational waves, high energy astrophysics.
