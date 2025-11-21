@@ -2,16 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>PhD Candidate</a>. Computer Science Department. Research in AI & Machine Learning.
+subtitle: <a href='#'>BSc Physics student</a>. Higher school of economics.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Office 123</p>
-    <p>Computer Science Building</p>
-    <p>University Campus</p>
+  more_info:
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
