@@ -66,30 +66,42 @@ permissions:
 
 jobs:
   deploy:
-    # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.5"
           bundler: "2.6.9"
           bundler-cache: true
+
       - name: Debug Ruby/Bundler
         run: |
           ruby -v
           gem -v
           bundle -v || true
           gem list bundler --all || true
+          bundle env || true
+          bundle config --local || true
+
+      - name: Ensure Bundler (explicit)
+        run: gem install bundler -v 2.6.9 || true
+
+      - name: Install build deps (for native gems)
+        run: sudo apt-get update && sudo apt-get install -y build-essential libssl-dev zlib1g-dev libxml2 libxml2-dev libxslt1-dev pkg-config
+
       - name: Install dependencies
         run: bundle install --jobs 4 --retry 3 --verbose
+
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
           cache: "pip" # caching pip dependencies
+
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -97,18 +109,22 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
+
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _site
+          
