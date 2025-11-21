@@ -75,7 +75,14 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.5"
+          bundler: "2.6.9"
           bundler-cache: true
+      - name: Debug Ruby/Bundler
+        run: |
+          ruby -v
+          gem -v
+          bundle -v || true
+          gem list bundler --all || true
       - name: Install dependencies
         run: bundle install --jobs 4 --retry 3 --verbose
       - name: Setup Python 🐍
