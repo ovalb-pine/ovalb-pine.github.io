@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: BSc Physics student, <a href='https://www.hse.ru/en/'>HSE University</a>.
+subtitle: BSc Physics student, <a href='https://www.hse.ru/en/'>HSE University</a>. Moscow, Russia.
 
 profile:
   align: right
@@ -24,5 +24,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Space Physics Major. Basics of Applied Programming Minor.
-Undergraduate space physics student in Moscow, Russia. Interests: multi-messenger astronomy, EM follow-up of gravitational waves, high energy astrophysics, astrophysical transients.
+Space Physics Major. Basics of Applied Programming Minor. Interests: multi-messenger astronomy, EM follow-up of gravitational waves, high energy astrophysics, astrophysical transients.
